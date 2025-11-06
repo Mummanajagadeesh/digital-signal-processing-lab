@@ -1,0 +1,12 @@
+t = 0:0.01:2; 
+f = 2; 
+x = sin(2*pi*f*t); 
+y = cos(2*pi*f*t); 
+subplot(2,1,1);
+plot(t, x, 'b', 'LineWidth', 1.5);
+title('Continuous-Time Sine Wave');
+xlabel('Time (t)'); ylabel('sin(2\pi f t)'); grid on;
+subplot(2,1,2);
+plot(t, y, 'r', 'LineWidth', 1.5);
+title('Continuous-Time Cosine Wave');
+xlabel('Time (t)'); ylabel('cos(2\pi f t)'); grid on;
